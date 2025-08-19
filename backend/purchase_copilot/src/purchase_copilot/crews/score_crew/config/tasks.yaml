@@ -1,0 +1,10 @@
+score_task:
+  description: >
+    Given the following property advertisement:
+    {content}
+    And the client's interests:
+    {interest}
+    Provide a score between 0 and 100 indicating how well the property advertisement matches the client's interests.
+  expected_output: >
+    - A numeric score between 0 and 100
+  agent: scorer

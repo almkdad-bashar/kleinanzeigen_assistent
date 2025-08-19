@@ -1,0 +1,19 @@
+organize_task:
+  description: >
+    Given the content of a house for sale {content}.
+    Your Task is: 
+    1. Remove all unnecessary context such as. ads for other houses, and so on.
+    2. extract the following information for the house:
+        - name_of_adverisment
+        - house_price
+        - description
+        - location
+        - owner_contact
+  expected_output: >
+        The output should be in json formate and has the following information:
+        - name_of_adverisment: string
+        - house_price: string
+        - description: string
+        - location: string 
+        - owner_contact: string
+  agent: cleaner
