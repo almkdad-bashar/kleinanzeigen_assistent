@@ -20,7 +20,7 @@ const handleSubmit = async () => {
       input_interest: formData.interest,
     };
 
-    const response = await fetch("http://localhost:8000/data", {
+    const response = await fetch("http://172.17.0.3:8000/data", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(payload),
@@ -54,7 +54,7 @@ const handleSubmit = async () => {
       </div>
 
       <div style={{ marginBottom: "15px" }}>
-        <label style={{ display: "block", marginBottom: "5px" }}>Seitnummer:</label>
+        <label style={{ display: "block", marginBottom: "5px" }}>Page Numbers:</label>
         <input
           type="text"
           name="seitnummer"
